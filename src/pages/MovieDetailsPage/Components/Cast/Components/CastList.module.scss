@@ -1,0 +1,37 @@
+.castList {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  & .castItem {
+    width: 150px;
+    height: 310px;
+    border: 1px solid #daa520;
+    border-radius: 2px;
+    padding: 2px;
+    & .name {
+      font-weight: 700;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.9);
+    }
+    & .image {
+      width: 150px;
+      max-height: 200px;
+      object-fit: cover;
+    }
+    & .character {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+
+.noInfo {
+  color: red;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
