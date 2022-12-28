@@ -49,9 +49,12 @@ const MovieDetailsList = () => {
             <p>{moviesId.overview}</p>
             <h3>Genres:</h3>
             <ul className={styles.genres}>
-              {moviesId.genres.map(genre => (
-                <li key={genre.genre_ids}>{genre.name}</li>
-              ))}
+              {moviesId.genres.map(
+                genre => (
+                  <li key={genre.id}>{genre.name}</li>
+                )
+                // console.log(genre)
+              )}
             </ul>
 
             <div className={styles.links}>
